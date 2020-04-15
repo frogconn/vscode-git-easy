@@ -4,9 +4,13 @@ Git Easy makes is really easy to use Git with your project. This is inspired by 
 
 ## Manual install on Ubuntu
 ```
-rm -rf extension && mkdir extension && rsync -av --exclude='extension/' --exclude='.git/' --exclude='.vscode/' ./ extension/ && zip -r git-easy-frogconn.vsix extension && rm -rf extension
+npm install
 
-code --install-extension git-easy-frogconn.vsix
+npm install -g vsce
+
+vsce package
+
+code --install-extension git-easy-frogconn-1.11.0.vsix
 ```
 ## Features
 
