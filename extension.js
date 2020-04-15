@@ -260,11 +260,11 @@ function activate(context) {
                         return;
                     } else {
                         console.log(result);
-                        var msg = "Committed to branch " + result.branch + " (" + result.commit + ")\n" +
-                                result.summary.changes + " change(s), " +
-                                result.summary.insertions + " addition(s), " +
-                                result.summary.deletions + " deletion(s).";
-                        showOutput(msg);
+                        // var msg = "Committed to branch " + result.branch + " (" + result.commit + ")\n" +
+                        //         result.summary.changes + " change(s), " +
+                        //         result.summary.insertions + " addition(s), " +
+                        //         result.summary.deletions + " deletion(s).";
+                        // showOutput(msg);
                     }
                 })
             }
