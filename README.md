@@ -2,6 +2,12 @@
 
 Git Easy makes is really easy to use Git with your project. This is inspired by the git plugin of Sublime Text.
 
+## Manual install on Ubuntu
+```
+rm -rf extension && mkdir extension && rsync -av --exclude='extension/' --exclude='.git/' --exclude='.vscode/' ./ extension/ && zip -r git-easy-frogconn.vsix extension && rm -rf extension
+
+code --install-extension git-easy-frogconn.vsix
+```
 ## Features
 
 It currently supports these commands -
